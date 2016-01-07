@@ -1,0 +1,10 @@
+assets:     
+  - pmifair.sql.gz
+steps:
+  - name: Probo site setup
+    plugin: Drupal
+    database: pmifair.sql.gz
+    databaseGzipped: true
+    databaseUpdates: true
+    revertFeatures: true
+    clearCaches: true
